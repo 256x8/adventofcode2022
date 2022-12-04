@@ -1,0 +1,2 @@
+print(max([sum(s) for s in [list(map(int, s)) for s in [s.split(',') for s in ','.join(open('1.txt', 'r').read().split('\n')).split(',,')]]]))
+print(sum(sorted([sum(s) for s in [list(map(int, s)) for s in [s.split(',') for s in ','.join(open('1.txt', 'r').read().split('\n')).split(',,')]]])[-3:]))
